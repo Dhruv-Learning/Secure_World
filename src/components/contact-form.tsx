@@ -66,16 +66,16 @@ export function ContactForm() {
       <div className="grid gap-4">
         <div className="grid gap-2">
           <Label htmlFor="name">Name</Label>
-          <Input id="name" name="name" placeholder="John Doe" required defaultValue={state.fields?.name} />
+          <Input id="name" name="name" placeholder="Dhruv.." required defaultValue={state.fields?.name} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="grid gap-2">
             <Label htmlFor="phone">Phone</Label>
-            <Input id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required defaultValue={state.fields?.phone} />
+            <Input id="phone" name="phone" type="tel" placeholder="(+91) 6476457756" required defaultValue={state.fields?.phone} />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="john.doe@example.com" required defaultValue={state.fields?.email} />
+            <Input id="email" name="email" type="email" placeholder="dhruva@gmail.com" required defaultValue={state.fields?.email} />
           </div>
         </div>
         <div className="grid gap-2">
