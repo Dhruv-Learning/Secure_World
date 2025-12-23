@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "A professional security guard standing alert in a modern building lobby.",
+      "imageUrl": "https://images.unsplash.com/photo-1618371690240-e0d46eead4b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZWN1cml0eSUyMGd1YXJkfGVufDB8fHx8MTc2NjUwNjA3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "security guard"
+    },
+    {
+      "id": "about-us-image",
+      "description": "A team of diverse security professionals in uniform, looking confident.",
+      "imageUrl": "https://images.unsplash.com/photo-1763656445798-7ed72eda7aaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzZWN1cml0eSUyMHRlYW18ZW58MHx8fHwxNzY2NTA2MDc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "security team"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for a corporate client.",
+      "imageUrl": "https://images.unsplash.com/photo-1589386417686-0d34b5903d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY2NDUwMzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for an event manager.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzY2MzkxNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for a residential property manager.",
+      "imageUrl": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbWlsaW5nJTIwcGVyc29ufGVufDB8fHx8MTc2NjM4NTIyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling person"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map showing the location of the company office.",
+      "imageUrl": "https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2NjQwOTEyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    }
+  ]
 }
