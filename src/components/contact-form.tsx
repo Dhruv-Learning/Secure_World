@@ -1,9 +1,8 @@
 "use client";
 
-import { useActionState } from 'react';
+import { useActionState, useRef, useEffect } from 'react';
 import { useFormStatus } from 'react-dom';
 import { handleContactForm, type FormState } from '@/app/actions';
-import { useEffect, useRef } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -15,7 +14,7 @@ import { CheckCircle } from 'lucide-react';
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" disabled={pending} className="w-full bg-primary hover:bg-primary/90">
+    <Button type="submit" disabled={pending} className="w-full">
       {pending ? 'Submitting...' : 'Get Quote'}
     </Button>
   );
@@ -45,10 +44,10 @@ export function ContactForm() {
 
   if (state.data) {
     return (
-      <Alert variant="default" className="border-green-500/50 text-green-500">
-        <CheckCircle className="h-4 w-4 text-green-500" />
+      <Alert variant="default" className="border-green-500/50 text-green-500 dark:text-green-400">
+        <CheckCircle className="h-4 w-4 text-green-500 dark:text-green-400" />
         <AlertTitle>Submission Successful!</AlertTitle>
-        <AlertDescription>
+        <AlertDescription className="text-foreground">
           {state.message}
           <div className="mt-4 text-sm bg-muted/50 p-4 rounded-md text-foreground">
               <p className="font-semibold">Lead Analysis:</p>

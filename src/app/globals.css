@@ -4,23 +4,23 @@
 
 @layer base {
   :root {
-    --background: 0 0% 18%; /* #2D2D2D */
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    --card: 0 0% 22%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 18%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
     --primary: 223 49% 30%; /* #243A73 */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 25%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 51 100% 50%; /* #FFD700 */
     --accent-foreground: 0 0% 10%; /* Dark color for text on gold */
@@ -28,9 +28,9 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 25%;
-    --input: 0 0% 25%;
-    --ring: 51 100% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 223 49% 30%;
 
     --radius: 0.5rem;
     --chart-1: 12 76% 61%;
@@ -68,6 +68,7 @@
     --border: 0 0% 25%;
     --input: 0 0% 25%;
     --ring: 51 100% 50%;
+    
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;

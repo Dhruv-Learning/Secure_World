@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { Menu, X, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from './theme-toggle';
 
 const navLinks = [
   { href: '/#about', label: 'About Us' },
@@ -32,25 +33,23 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Shield className="h-8 w-8 text-accent" />
-          <span className="text-xl font-bold font-headline text-white">Vanguard Security</span>
+          <span className="text-xl font-bold font-headline">Vanguard Security</span>
         </Link>
         
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-sm font-medium text-gray-300 hover:text-accent transition-colors">
+            <Link key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-2">
-          <Button asChild>
+        <div className="flex items-center gap-2">
+           <ThemeToggle />
+          <Button asChild className="hidden lg:inline-flex">
             <Link href="/contact">Get a Quote</Link>
           </Button>
-        </div>
-
-        <div className="lg:hidden">
-          <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden">
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             <span className="sr-only">Toggle menu</span>
           </Button>
@@ -58,10 +57,10 @@ export function Header() {
       </div>
       
       {isMenuOpen && (
-        <div className="lg:hidden bg-background/95 pb-4 absolute top-20 left-0 w-full">
-          <nav className="flex flex-col items-center gap-4">
+        <div className="lg:hidden bg-background/95 pb-4 absolute top-20 left-0 w-full animate-in fade-in-20 slide-in-from-top-4">
+          <nav className="flex flex-col items-center gap-4 pt-4">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-lg font-medium hover:text-accent" onClick={() => setIsMenuOpen(false)}>
+              <Link key={link.href} href={link.href} className="text-lg font-medium text-foreground/80 hover:text-primary" onClick={() => setIsMenuOpen(false)}>
                 {link.label}
               </Link>
             ))}
