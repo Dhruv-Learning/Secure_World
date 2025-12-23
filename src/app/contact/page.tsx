@@ -36,7 +36,7 @@ export default function ContactPage() {
                         <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                         <div>
                             <h3 className="font-semibold">Our Office</h3>
-                            <p className="text-muted-foreground">456 Shield Avenue, Suite 200, Citadel City, USA 54321</p>
+                            <p className="text-muted-foreground">456 Shield Avenue,GAziyabad City, India </p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -50,14 +50,14 @@ export default function ContactPage() {
                         <Phone className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                         <div>
                             <h3 className="font-semibold">Call Us</h3>
-                            <p className="text-muted-foreground">(555) 123-4567</p>
+                            <p className="text-muted-foreground">(+91) 6396309165</p>
                         </div>
                     </div>
                      <div className="flex items-start gap-4">
                         <MessageCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                         <div>
                             <h3 className="font-semibold">WhatsApp</h3>
-                            <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                            <p className="text-muted-foreground">+91 7008755889 </p>
                         </div>
                     </div>
                 </CardContent>
